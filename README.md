@@ -10,6 +10,8 @@ become a staple of my content online.
 
 Let's see how long it takes for me to give up.
 
+--------------------------------------------------------------------------------
+
 The source code for this site is freely available under the terms of the
 [MIT Open Source License](http://www.opensource.org/licenses/MIT)
 so you can feel free to use it in your own projects. At time of writing,
