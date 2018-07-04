@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Hello, World!
 
-You can use the [editor on GitHub](https://github.com/ItsSeaJay/sea-jay-blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to my blog.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It's in a state of disrepair right now, but soon i'll use it to write about all
+sorts of things; mainly code and games. I've attempted to start a regular blog
+before, though none have been very successful. I hope that by broadening the
+subject matter and forcing myself to write a bit at a time, hopefully this can
+become a staple of my content online.
 
-### Markdown
+Let's see how long it takes for me to give up.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ItsSeaJay/sea-jay-blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The source code for this site is freely available under the terms of the
+[MIT Open Source License](http://www.opensource.org/licenses/MIT)
+so you can feel free to use it in your own projects. At time of writing,
+I haven't decided on a license for the copy itself, but I'll probably end up
+going with something equally permissive. For now, assume that the actual stuff
+I'm writing here is subject to copyright.
