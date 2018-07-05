@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   The official blog of Sea Jay that will almost certainly be abandoned at some
   point in the near future. Here I discuss video games development, programming
   and everything in between!
-baseurl: "/sea-jay-blog" # the subpath of your site, e.g. /blog
-url: "https://blog.sea-jay.net/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.sea-jay.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ItsSeaJay
 github_username:  ItsSeaJay
 
