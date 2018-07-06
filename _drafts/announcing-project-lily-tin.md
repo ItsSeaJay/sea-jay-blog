@@ -2,7 +2,8 @@
 layout: post
 title: "Announcing Project Lily Tin"
 date: 2018-07-06 10:14:27 +0000
-categories: gamedev 
+categories: gamedev
+tags: lily-tin c++
 ---
 
 Over the past couple of months, I've become increasingly aware of how little
@@ -16,16 +17,27 @@ knowledge. It's going to be in 2D, because I've never written a full game in
 this language before, and I feel that I work best when I don't have to worry
 about the z axis.
 
+I'm also making this open source too, because these days, I don't see any
+reasons to keep code to myself.
+
 If you want an idea of how it might play, think of breakout mixed with boxing.
 I've been playing quite a lot of WarioWare, Inc.: Mega Microgames recently and
 I've been inspired by the simplicity of the score-based minigames you get for
 completing stages, and how each manage to do a lot with limited controls.
+
+![WarioWare Screenshot]({{ "/assets/warioware-inc-mega-microgames-jump-forever.png" | absolute_url }})
+
+*The 'Jump Forever' minigame only has one button. Well, to begin with anyway.*
+*Apologies for the blurry screenshot.*
 
 I'm imagining that instead of a paddle you move back and forth, you instead have
 a pair of boxing gloves that need to be charged first. The ball is subject to
 simple gravity, so you have to get into a rhythm of anticipating and hitting
 the ball at the right time. Why you can't just punch the bricks yourself is
 something I'm still thinking about.
+
+I'm giving it the code name of 'Lily Tin' for now, but I'm going to try my
+hardest to find a better title for it before release.
 
 ## Technology
 In order to make a game, you need a couple of things. You need a way of letting
@@ -96,15 +108,18 @@ making games in it before, but overall it was unsuited to any 'serious'
 development. It's no surprise then that it was cancelled in 2005 and hasn't been
 touched since.
 
-Enter [GLFW, or the OpenGL](https://www.opengl.org/resources/libraries/glut/)...
+Enter [GLFW, or the OpenGL](http://www.glfw.org/)...
 actually, I have no idea what it stands for. I can't find it anywhere!
+I'm going to say 'framework'.
 GLFW feels like a replacement for GLUT made by people who know what they're
 doing. Whilst it's certainly interesting and provides a great deal of control,
 you still have to do almost everything not related to the operating system
 yourself. I'd only really use this if I needed to do something specific where
-the size of the library was important.
+the size of the library was more important than it is now.
 
 #### SDL2
+[![SDL2 Logo](https://www.libsdl.org/media/SDL_logo.png)](https://www.libsdl.org/)
+
 This is the one that you'll probably seen the most of, thanks to its use in
 Valve's Source engine. It occupies a similar space to GLFW, but is much larger
 and has support for the DirectX API for better performance on Windows.
@@ -119,13 +134,15 @@ I'd have to write my own audio code, which would be a massive hassle for
 something this small.
 
 #### SFML
+[![SFML Logo](https://www.sfml-dev.org/download/goodies/sfml-logo-small.png)](https://www.sfml-dev.org/)
+
 This is the one that I ultimately went with, and the main reasons why is that
 it's based on C++, not C. All of it's functionality is properly namespaced, and
 as such is much easier to integrate it in my project. Plus, it has it's own
 module for audio, so I don't have to bother with the nitty gritty of beeps and
 boops.
 
-Fantastic! It seems like we're on to a winner. A comprehensive library written
+Fantastic! It seems like I'm on to a winner. A comprehensive library written
 in the same language that's easy to implement and has a focus on 2D rendering.
 All's well that ends well, right? Not exactly.
 
@@ -137,5 +154,54 @@ the modules but it is worth considering for future projects.
 --------------------------------------------------------------------------------
 
 So I've decided on a language, I can give feedback to the player and I can
-process input. What else is there? Well, once we've written our code, we need
-some way of compiling it into an executable, 
+process input. What else is there? Well, once I've written our code, I need
+some way of compiling it into an executable, as well as some way of linking the
+libraries to that executable.
+
+I'm a Windows developer mainly, so my first instinct is to boot up Visual Studio
+and muddle my way through the menus. This is a working solution, but it's not
+the best way of doing things, or even the most efficient.
+
+The other day, I was trying to compile a game for an aquaintance of mine. As
+above, they made it in Visual Studio and distributed it that way. I tried
+debugging it and it wouldn't start. Why?
+
+Honestly, I'm not entirely sure, but I'm pretty sure it was to do with the
+version. Visual Studio abstracts a lot of things, which is good because it
+makes it easier to use, but also bad because of how delicate things can get.
+Especially when it comes to updates. If one thing goes out of place, your
+game will just refuse to start unless you spend hours toiling in the Properties
+menu.
+
+Keep in mind that my game's open source. We're in the big wide world here with
+living, breathing people that have opinions and preferences. There's a big
+chance that whoever works on my game next won't use Visual Studio, or even have
+a Windows computer at all. This is where meta-build systems like CMake come in.
+
+## CMake
+C++ is a compiled language. This means in order for a computer to meaningfully
+use your code, you have to convert it once for each machine you want to target,
+on real (or sometimes virtual) computers.
+
+It's not like Python where your code is interpreted each time it's run. It's
+tied to your hardware. Even worse is when you write C++ on one computer using
+that computer's tools and hand it off to someone else. You have no idea if it'll
+work or not, and most of the time it doesn't.
+
+CMake fixes this by having you create a single, interpreted script that tells
+your computer how your project should be built regardless of what kind of
+computer you're using, called `CMakeLists.txt`. You write your code and headers
+as normal, but instead of linking them to an executable, you tell CMake to run
+the script and do it for you.
+
+Using this method, you can create a stupid amount of different build chains for
+a ludicrous number of compilers and platforms, but the ones I'm most interested
+in are Makefiles and Visual Studio solutions (`.sln` files).
+
+The downside of this of course is that you've got to learn an entirely new
+programming language, though I've spent enough time with CMake at this point
+to have a reasonable idea of how it works. As for configuring the latest version
+of SFML with it, that was a tricky process due to the lack of documentation
+available for 2.5.0 at time of writing.
+
+I'll go into more detail about this process next time.
