@@ -103,14 +103,14 @@ GLUT provided a lever into the OpenGL API using familiar C functions, as well
 as windows and basic input. Many of it's basic functions are still in use
 today as they bleed into the specification itself.
 
-It was easy to use, if a bit cumbersome, and I've heard legends of people
+It was easy to use, if a bit unweildy, and I've heard legends of people
 making games in it before, but overall it was unsuited to any 'serious'
 development. It's no surprise then that it was cancelled in 2005 and hasn't been
 touched since.
 
 Enter [GLFW, or the OpenGL](http://www.glfw.org/)...
 actually, I have no idea what it stands for. I can't find it anywhere!
-For the purposes of this post making sense, I'm going to say 'framework'.
+I'm going to say 'framework'.
 GLFW feels like a replacement for GLUT made by people who know what they're
 doing. Whilst it's certainly interesting and provides a great deal of control,
 you still have to do almost everything not related to the operating system
@@ -192,9 +192,11 @@ CMake fixes this by having you create a single, interpreted script that tells
 your computer how your project should be built regardless of what kind of
 computer you're using, called `CMakeLists.txt`. You write your code and headers
 as normal, but instead of linking them to a Visual Studio solution, for example,
-you tell CMake to run the script and do it for you. Using this method,
-you can create a stupid amount of different build chains for a ludicrous number
-of compilers and platforms.
+you tell CMake to run the script and do it for you.
+
+Using this method, you can create a stupid amount of different build chains for
+a ludicrous number of compilers and platforms, but the ones I'm most interested
+in are Makefiles and Visual Studio solutions (`.sln` files).
 
 The downside of this of course is that you've got to learn an entirely new
 programming language, though I've spent enough time with CMake at this point
