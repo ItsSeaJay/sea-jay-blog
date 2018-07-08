@@ -1,8 +1,6 @@
 ---
 layout: post
-title: "How to Find SFML 2.5.0 with CMake"
-date: 2018-07-08 11:28:38 +0000
-categories: tutorials
+title: How to Find SFML 2.5.0 with CMake
 ---
 
 ## Overview
