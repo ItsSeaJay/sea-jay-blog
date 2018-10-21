@@ -33,7 +33,7 @@ You guys are the greatest!
 Oh, and [Bob](http://stuffwithstuff.com/). Wouldn't have any of this without Bob.
 
 So first off, if you're not interested in how I (technically we) did it,
-[there you go](https://sea-jay.net/wren/v1.0.0.zip).
+[there you go](https://sea-jay.net/wren/windows/v0.1.0.zip).
 That zip file should contain all the things you need for wren development on a
 Windows computer, including the source code, command line interface and static
 binaries. I'd really hope that the website starts handing out stable releases on
