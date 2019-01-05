@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Find SFML 2.5.0 with CMake
+title: "How to Find SFML 2.5.0 with CMake"
 ---
 
 ## Overview
