@@ -3,7 +3,7 @@ layout: post
 title: "A Greenhorn's Guide to Drawpile"
 ---
 
-# Preamble
+## Preamble
 I'm an artist.
 
 That fact might not be readily apparent from how little I actually draw and
@@ -25,7 +25,7 @@ Yeah, I couldn't beleive it either, until I tried it for myself.
 It's called [Drawpile](https://drawpile.net/), it's amazing, and I'm going to
 teach you how you can experience it for yourself.
 
-# A Quick Warning
+## A Quick Warning
 **Before we begin, I should mention that whilst I'm going to using Drawpile in a
 savoury and civilised manner, that doesn't mean everyone else will.**
 
@@ -38,7 +38,7 @@ know in real life.**
 
 With that out of the way, let's begin.
 
-# Introduction
+## Introduction
 Drawpile is a digital art application that allows for you and potentially
 dozens of other people to draw together on the same canvas over the internet.
 
@@ -67,19 +67,19 @@ to haven't been so successful.
 The purpose of this guide is to teach you how to get up and running as quickly
 as possible, using the most straightforward methods I know.
 
-# Requirements
+## Requirements
 Before using Drawpile, you're going to need a few things:
 
-## A Computer with an Internet Connection
+### A Computer with an Internet Connection
 If you're reading this, then congratulations! You've already fulfilled this
 requirement.
 
-## A Drawpile Account
+### A Drawpile Account
 In order to use the dedicated Drawpile server, you'll need an account with an
 associated e-mail address to confirm your identity. If you don't already have
 one, you can register [here](https://drawpile.net/accounts/signup/).
 
-## Other People
+### Other People
 This is always the sticking point for any kind of multiplayer anything.
 
 I recommend finding between 2-4 other likeminded individuals, perhaps more,
@@ -98,18 +98,18 @@ I myself got into it through the [Pixel Art Official](https://discord.gg/Qqm8ANw
 Discord server, and have had a blast playing with those folks, though your
 milage may vary.
 
-## The Drawpile Application Itself
+### The Drawpile Application Itself
 You can download the latest version for your computer's operating system and
 architecture [here](https://drawpile.net/download/). This is likely going to
 be an installer and not a portable executable, so be sure to get that over and
 done with before continuing.
 
-## Some Kind of Drawing Tablet
+### Some Kind of Drawing Tablet
 This is optional, but unless your name is Mike Matei, you're probably not going
 to want to use a mouse for intricate linework and the like, unless you happen
 to find that more comfortable.
 
-# Roles
+## Roles
 Drawpile servers are split into rooms (think chat rooms).
 
 There are two key roles when it comes to using Drawpile: the *host* is the one
@@ -120,7 +120,7 @@ If you're lucky, someone in your group will have already volunteered to be the
 host with an available room and you'll be able to skip the next portion of this
 guide. Otherwise, you're going to need to sort that out before going forward.
 
-## Hosting
+### Hosting
 So you've voluneered to be the host! Good for you. Being the host is a little
 more work than just following a link or code someone gave you, but it'll be
 worth it when everyone else is up there drawing alongside you.
@@ -200,7 +200,7 @@ Next to the word `Room`, there'll be a string of random characters. This is the
 room code used for joining. Write this down, give it to your group,
 and have fun drawing!
 
-## Joining
+### Joining
 Thankfully, joining in a room is much simpler than hosting one.
 
 To join a room, you'll either need its room code, or a direct link. A room code
@@ -223,7 +223,7 @@ in the `Find...` window's list.
 
 You should then be authenticated and entered into the room. Congratulations!
 
-# Conclusion
+## Conclusion
 Hopefully you found this guide to Drawpile useful. It really is a neat program
 that I hope to see get more exposure in the future. Though I've used other
 applications with similar functionality to Drawpile, I don't think I've come
