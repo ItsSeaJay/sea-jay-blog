@@ -133,7 +133,7 @@ on the status bar, click the `Session` tab, and then `Host...`:
 
 ![Session dropdown with host hovering]({{ "/assets/drawpile/session-host-dropdown.png" | absolute_url }})
 
-this should make the following window appear.
+this should make the following window appear:
 
 ![Host window]({{ "/assets/drawpile/host-window.png" | absolute_url }})
 
@@ -155,4 +155,80 @@ That's actually for a *room password* that can be used to limit access to your
 Drawpile session. If you enter something into this field, everyone who wants to
 join will need to have the password. By setting this to your account's password,
 you're effectively making it so only that the person who set up that Phishing
-scam you fell for the other week can join in, and who wants to invite them?
+scam you fell for the other week can join in, and really, who wants to invite
+them?
+
+Make sure the room password is either blank (so no-one needs to type a password)
+or something long and memorable you can quickly tell to anyone who wants to join
+in.
+
+Next, move over to the `Listing` box. The fields in there allow you to decide
+where your room is advertised. You can turn this off, but that makes it a lot
+harder for other people to join. Since you've most likely got a specific group
+of people in mind, you're probably not going to be happy when someone outside
+of that group bursts in unnanounced with rushed scribbles in tow.
+
+Ensure that `drawpile.net` is selected from the list of available options,
+and then click `Private (room code only)`. This will mean that Drawpile won't
+advertise your room on their website, but people who know about it already
+will still be able to search for it via the room code (more on that later).
+
+Move over to the server box. Most likely, this will have `Built-in` selected,
+which means that Drawpile will attempt to create the room within a standalone
+server application running on your computer, bypassing the dedicated servers
+entirely and giving you much greater control in return for having to deal with
+port forwarding, domain names and constantly shifting IP addresses.
+
+We don't want that.
+
+Instead, select `Remote :`, and type `drawpile.net` in the text box as per
+[the instructions on the official room list](https://pub.drawpile.net/), then
+click `Host`.
+
+![Log in window]({{ "/assets/drawpile/log-in-window.png" | absolute_url }})
+
+You'll then be prompted for your account credentials. Enter those, then hit
+`Continue`.
+
+If you hear a bell chime, then congratulations! You've set up a room
+successfully! Give yourself a pat on the back, then cast your eyes to the
+bottom right of the screen:
+
+![Room code]({{ "/assets/drawpile/bottom-right-room-code.png" | absolute_url }})
+
+Next to the word `Room`, there'll be a string of random characters. This is the
+room code used for joining. Write this down, give it to your group,
+and have fun drawing!
+
+## Joining
+Thankfully, joining in a room is much simpler than hosting one.
+
+To join a room, you'll either need its room code, or a direct link. A room code
+is a random string of characters used as an alias to find rooms quickly. You'll
+need to ask the host or someone who's already in the room for this before going
+any further.
+
+Once you have the code, open Drawpile, go to the status tab and click `Join...`:
+
+![Session dropdown with join hovering]({{ "/assets/drawpile/session-join-dropdown.png" | absolute_url }})
+
+doing that should make this window appear:
+
+![Join window]({{ "/assets/drawpile/join-window.png" | absolute_url }})
+
+Now either follow the instructions to type the room code into the box and hit
+`Join`, followed by your account credentials, or click the `Find...` option and
+search for it in the list. It should be noted that private rooms won't appear
+in the `Find...` window's list.
+
+You should then be authenticated and entered into the room. Congratulations!
+
+# Conclusion
+Hopefully you found this guide to Drawpile useful. It really is a neat program
+that I hope to see get more exposure in the future. Though I've used other
+applications with similar functionality to Drawpile, I don't think I've come
+across one with the same quality and stability.
+
+A big thank you to everyone who helped me along the way, especially those on the
+previously mentioned [Pixel Art Official](https://discord.gg/Qqm8ANw)
+Discord server. You guys rock!
