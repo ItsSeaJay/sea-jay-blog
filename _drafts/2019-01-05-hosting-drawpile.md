@@ -137,6 +137,22 @@ this should make the following window appear.
 
 ![Host window]({{ "/assets/drawpile/host-window.png" | absolute_url }})
 
-Let's go over the options. The ones in the `Session` tab affect how the room
-is perceived by others in both online listings and the application itself,
-whilst the `Settings` lean towards moderation.
+Let's go over the options. As you can see, there is a box with two tabs in it.
+The ones in the `Session` tab affect how the room is perceived by others
+in both online listings and the application itself, whilst the `Settings`
+lean towards moderation.
+
+Start off by giving your room a title and entering your
+[drawpile.net](https://drawpile.net/) username.
+
+You might next be tempted to type in the password to your
+[drawpile.net](https://drawpile.net/) account password into the `Password`
+field.
+
+**DON'T DO THIS!**
+
+That's actually for a *room password* that can be used to limit access to your
+Drawpile session. If you enter something into this field, everyone who wants to
+join will need to have the password. By setting this to your account's password,
+you're effectively making it so only that the person who set up that Phishing
+scam you fell for the other week can join in, and who wants to invite them?
